@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background: gray;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#grade {
+	display: none; 
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px;
+}
+
+#grade button {
+	font-size: 50pt;
+}

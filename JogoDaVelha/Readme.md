@@ -1,0 +1,3 @@
+## Hello There, This tic-tac-toe game was developed in class, without html and css, only the JavaScript logic
+## To Run this file, you'll have to copy the code and paste in this site [https://jsitor.com/](https://jsitor.com/), or in a similar web site.
+## I developed a new Tic-Tac-Toe at home with HTML and CSS. You can see them here: [Tic-Tac-Toe]() 
