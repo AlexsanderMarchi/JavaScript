@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Game</title>
+  <style>
+    /* Styles for the chess board */
+    .chess-board {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 2px;
+    }
+    .square {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .black {
+      background-color: gray;
+    }
+    .piece {
+      font-size: 50px;
+    }
+  </style>
+  <script src="chessGame.js"></script>
+</head>
+<body>
+  <div class="chess-board">
+    <!-- First row -->
+    <div class="square black"><span class="piece">&#9820;</span></div>
+    <div class="square"><span class="piece">&#9822;</span></div>
+    <div class="square black"><span class="piece">&#9821;</span></div>
+    <div class="square"><span class="piece">&#9819;</span></div>
+    <div class="square black"><span class="piece">&#9818;</span></div>
+    <div class="square"><span class="piece">&#9821;</span></div>
+    <div class="square black"><span class="piece">&#9822;</span></div>
+    <div class="square"><span class="piece">&#9820;</span></div>
+    <!-- Second row -->
+    <div class="square"><span class="piece">&#9823;</span></div>
+    <div class="square black"><span class="piece">&#9823;</span></div>
+    <div class="square"><span class="piece">&#9823;</span></div>
+    <div class="square black"><span class="piece">&#9823;</span></div>
+    <div class="square"><span class="piece">&#9823;</span></div>
+    <div class="square black"><span class="piece">&#9823;</span></div>
+    <div class="square"><span class="piece">&#9823;</span></div>
+    <div class="square black"><span class="piece">&#9823;</span></div>
+    <!-- Third row -->
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <!-- Fourth row -->
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <!--Fiveth Row-->
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <!-- Sixth row -->
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <div class="square"></div>
+    <div class="square black"></div>
+    <!-- Seventh row -->
+    <div class="square black"><span class="piece">&#9817;</span></div>
+    <div class="square"><span class="piece">&#9817;</span></div>
+    <div class="square black"><span class="piece">&#9817;</span></div>
+    <div class="square"><span class="piece">&#9817;</span></div>
+    <div class="square black"><span class="piece">&#9817;</span></div>
+    <div class="square"><span class="piece">&#9817;</span></div>
+    <div class="square black"><span class="piece">&#9817;</span></div>
+    <div class="square"><span class="piece">&#9817;</span></div>
+    <!--Last Row-->
+    <div class="square"><span class="piece">&#9814;</span></div>
+    <div class="square black"><span class="piece">&#9816;</span></div>
+    <div class="square"><span class="piece">&#9815;</span></div>
+    <div class="square black"><span class="piece">&#9812;</span></div>
+    <div class="square"><span class="piece">&#9813;</span></div>
+    <div class="square black"><span class="piece">&#9815;</span></div>
+    <div class="square"><span class="piece">&#9816;</span></div>
+    <div class="square black"><span class="piece">&#9814;</span></div>
+  </div>
+</body>
