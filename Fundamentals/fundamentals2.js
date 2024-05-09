@@ -88,10 +88,7 @@ TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27. 
 
 */
-const calcAverage = (num1, num2, num3) => {
-    const averageScore = (num1+num2+num3)/3 ;
-    return averageScore; 
-};
+const calcAverage = (num1, num2, num3) => (num1+num2+num3)/3 ;
 
 function checkWinner (avgDolphins, avgKoalas){
     if(avgDolphins >= avgKoalas*2){
@@ -114,3 +111,34 @@ const scoreKoalas2 = calcAverage(23, 34, 27);
 
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins2, scoreKoalas2);
+
+
+
+//Arrays
+const friends = ['Michael', 'Steven', 'Peter'];
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[friends.length - 1]);
+
+friends[1] = 'Jay';
+console.log(friends);
+
+const ages = [calcAge1(years[0]), calcAge1(years[1]), calcAge1(years[years.length - 1])];
+console.log(ages);
+
+//ADD ELEMENTS
+// const newLength = friends.push('Jonas'); // it will save the new length on the const newLength
+friends.push('Jonas'); //add a new value in the end of the Array  
+friends.unshift('Paul'); //add a new value in the beginning of the Array
+console.log(friends);
+
+
+//REMOVE ELEMENTS
+friends.pop(); //Will remove the last one
+// const popped = friends.pop(); //Instead of the new length, it'll return the popped element 
+friends.shift(); //Will remove the fisrt one
+console.log(friends);
+
+
+console.log(friends.indexOf('Jay')); // WIll Say the index position 
+console.log(friends.includes('Bob')); // WIll return a boolean value
