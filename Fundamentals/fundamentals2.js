@@ -142,3 +142,80 @@ console.log(friends);
 
 console.log(friends.indexOf('Jay')); // WIll Say the index position 
 console.log(friends.includes('Bob')); // WIll return a boolean value
+
+/*
+CHALLENGE #2
+Steven wants you to improve his tip calculator, using the same rules as before — tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+
+Your tasks:
+
+Write a function calcTip that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from the first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100.
+And now let's use arrays! So, create an array called bills containing the test data below.
+Create an array called tips containing the tip value for each bill, calculated from the function you created before.
+BONUS: Create an array totals containing the total values, so the bill + tip.
+*/
+
+const bills = [125, 555, 44];
+
+function calcTip (bill){
+    if(bill >= 50 && bill<=300){
+        const tip = bill * 0.15;
+        return tip;
+    }else{
+        const tip = bill * 0.2;
+        return tip;
+    }
+}
+let tips = [];
+tips[0] = calcTip(bills[0]);
+tips[1] = calcTip(bills[1]);
+tips[2] = calcTip(bills[2]);
+
+console.log(tips);
+
+const totals = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+console.log(totals);
+
+
+//Object
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Brothers',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+//    calcAge: function(birthYear){
+//         return 2037 - birthYear;
+//     } 
+
+    // calcAge: function(){
+    //     return 2037 - this.birthYear;
+    // }
+
+    calcAge: function(){
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    getSumary: function(){
+         return `${this.firstName} is a ${this.calcAge()} years old, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+    }
+
+}
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and the bff is ${jonas.friends[0]}`)
+
+//methods
+// console.log(jonas.calcAge(jonas.birthYear));
+// console.log(jonas['calcAge'](jonas.birthYear));
+console.log(jonas.calcAge()); //jonas.age was created
+console.log(jonas.age);
+
+console.log(jonas.getSumary());
